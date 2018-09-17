@@ -1,2 +1,24 @@
-<h1>Tasks#index</h1>
-<p>Find me in app/views/tasks/index.html.erb</p>
+<main class="container">
+  <section class="task-list">
+    <h1>TASKLIST</h1>
+    <ul>
+      <li>Add Task</li>
+      <li>All Tasks</li>
+    </ul>
+  </section>
+
+  <section class="your-tasks">
+    <h2>YOUR TASKS</h2>
+    <% i = 1 %>
+    <ul>
+      <% @tasks.each do |task|%>
+      <li>
+        <a href="/tasks/<%=task[:name] %>"><%= "#{i}. Task #{task[:name].capitalize}: #{task[:description]}" %></a>
+      </li>
+      <p>Mark Complete | Edit | Delete</p>
+
+      <% i += 1 %>
+      <% end %>
+    </ul>
+  </section>
+</main>

@@ -1,3 +1,51 @@
 // Place all the styles related to the Tasks controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+.container {
+  display: grid;
+  border: solid;
+  grid-template: 100% / 1fr 2fr;
+  height: 500px;
+  padding: 25px;
+  font-family: sans-serif;
+}
+
+.your-tasks {
+  border-radius: 15px;
+  border: thin solid;
+}
+.your-tasks ul {
+  display: flex;
+  flex-direction: column;
+  padding: 2em;
+  text-align: left;
+}
+
+.your-tasks ul li {
+  font-weight: bold;
+}
+
+p {
+  padding-left: 1em;
+}
+.task-list {
+  text-align: center;
+  padding-right: 1em;
+
+}
+
+.task-list li{
+  border-radius: 15px;
+  border: thin solid;
+  padding: 1em;
+  margin: 10px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+h2 {
+  text-align: center;
+}

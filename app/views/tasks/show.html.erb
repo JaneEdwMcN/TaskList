@@ -1,0 +1,7 @@
+<% if @task.nil? %>
+  <h1> 404 Not found</h1>
+<% else %>
+  <h1>Task Name: <%=@task[:name].capitalize %></h1>
+  <h3>Description: <%= @task[:description] %></h3>
+  <p>Completion Date: <%= @task[:completion_date] %> </p>
+<% end %>

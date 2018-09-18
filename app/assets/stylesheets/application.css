@@ -17,7 +17,7 @@
  .container {
    display: grid;
    border: solid;
-   grid-template: 100% / 1fr 2fr;
+   grid-template: 1fr / 1fr 2fr;
    height: 500px;
    padding: 25px;
    font-family: sans-serif;

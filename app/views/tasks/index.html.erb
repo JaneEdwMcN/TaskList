@@ -13,7 +13,7 @@
     <ul>
       <% @tasks.each do |task|%>
       <li>
-        <a href="/tasks/<%=task[:name] %>"><%= "#{i}. Task #{task[:name].capitalize}: #{task[:description]}" %></a>
+        <a href="/tasks/<%=task[:id] %>"><%= "#{i}. #{task[:name]}: #{task[:description]}" %></a>
       </li>
       <p>Mark Complete | Edit | Delete</p>
 

@@ -10,6 +10,21 @@
   </head>
 
   <body>
-    <%= yield %>
+
+    <main class="container">
+      <section class="task-list">
+        <h1>TASKLIST</h1>
+        <ul>
+          <li><a href="/tasks/">Add Tasks</a></li>
+          <!-- change later -->
+          <li><a href="/tasks/">All Tasks</a></li>
+        </ul>
+      </section>
+
+      <section class="your-tasks">
+        <%= yield %>
+      </section>
+    </main>
+
   </body>
 </html>

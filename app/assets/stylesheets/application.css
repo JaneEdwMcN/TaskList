@@ -18,7 +18,7 @@
    display: grid;
    border: solid;
    grid-template: 1fr / 1fr 2fr;
-   height: 500px;
+   height: 100%;
    padding: 25px;
    font-family: sans-serif;
  }
@@ -41,18 +41,38 @@
  p {
    padding-left: 1em;
  }
+
  .task-list {
    text-align: center;
    padding-right: 1em;
 
  }
 
- .task-list li{
+ .task-list li a{
    border-radius: 15px;
    border: thin solid;
    padding: 1em;
    margin: 10px;
  }
+
+ .task-list li{
+   margin: 20%;
+ }
+
+.task-list  a:hover{
+   color: white;
+   background-color: black;
+ }
+
+a:visited {
+  color: black;
+}
+
+/* .task-list li a:hover{
+   color: white;
+   background-color: black;
+ } */
+
 
  ul {
    list-style: none;

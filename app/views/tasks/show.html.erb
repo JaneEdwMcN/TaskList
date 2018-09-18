@@ -1,20 +1,7 @@
 <% if @task.nil? %>
-  <h1> 404 Not found</h1>
+<h1> 404 Not found</h1>
 <% else %>
-
-<main class="container">
-  <section class="task-list">
-    <h1>TASKLIST</h1>
-    <ul>
-      <li>Add Task</li>
-      <li>All Tasks</li>
-    </ul>
-  </section>
-
-  <section class="your-tasks">
-    <h2>Task: <%=@task[:name]%></h2>
-    <p>Description: <%=@task[:description]%></p>
-    <p>Completion Date: <%= @task[:completion_date] %> </p>
-  </section>
-</main>
+<h2>Task: <%=@task[:name]%></h2>
+<p>Description: <%=@task[:description]%></p>
+<p>Completion Date: <%= @task[:completion_date] %> </p>
 <% end %>

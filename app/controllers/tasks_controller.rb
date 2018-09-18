@@ -15,10 +15,6 @@ class TasksController < ApplicationController
     @task = TASKS.find do |task|
       task[:name] == id
     end
-
-    # if @task.nil?
-    #
-    # end
   end
 
 end

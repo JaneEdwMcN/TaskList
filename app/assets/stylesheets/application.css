@@ -26,6 +26,14 @@
   border-radius: 15px;
   border: thin solid;
 }
+
+.your-tasks a:hover {
+  border: thin solid;
+  border-radius: 5px;
+  color: white;
+  background-color: black;
+}
+
 .your-tasks ul {
   display: flex;
   flex-direction: column;
@@ -65,12 +73,6 @@ p {
 a:visited {
   color: black;
 }
-
-/* .task-list li a:hover{
-color: white;
-background-color: black;
-} */
-
 
 ul {
   list-style: none;

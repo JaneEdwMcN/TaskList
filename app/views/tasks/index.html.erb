@@ -1,10 +1,9 @@
-
 <h2>YOUR TASKS</h2>
 <% i = 1 %>
 <ul>
   <% @tasks.each do |task|%>
   <li>
-    <a href="/tasks/<%=task[:id] %>"><%= "#{i}. #{task[:name]}: #{task[:description]}" %></a>
+    <%= link_to "#{i}. #{task[:name]}: #{task[:description]}", task_path(task.id) %>
   </li>
   <p>Mark Complete | Edit | Delete</p>
 

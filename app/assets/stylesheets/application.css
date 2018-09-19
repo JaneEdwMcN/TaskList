@@ -1,88 +1,101 @@
 /*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
- * vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
- * files in this directory. Styles in this file should be added after the last require_* statement.
- * It is generally better to create a new file per style scope.
- *
- *= require_tree .
- *= require_self
- */
+* This is a manifest file that'll be compiled into application.css, which will include all the files
+* listed below.
+*
+* Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+* vendor/assets/stylesheets directory can be referenced here using a relative path.
+*
+* You're free to add application-wide styles to this file and they'll appear at the bottom of the
+* compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+* files in this directory. Styles in this file should be added after the last require_* statement.
+* It is generally better to create a new file per style scope.
+*
+*= require_tree .
+*= require_self
+*/
 
- .container {
-   display: grid;
-   border: solid;
-   grid-template: 1fr / 1fr 2fr;
-   height: 100%;
-   padding: 25px;
-   font-family: sans-serif;
- }
+.container {
+  display: grid;
+  border: solid;
+  grid-template: 1fr / 1fr 2fr;
+  padding: 25px;
+  font-family: sans-serif;
+}
 
- .your-tasks {
-   border-radius: 15px;
-   border: thin solid;
- }
- .your-tasks ul {
-   display: flex;
-   flex-direction: column;
-   padding: 2em;
-   text-align: left;
- }
+.your-tasks {
+  border-radius: 15px;
+  border: thin solid;
+}
+.your-tasks ul {
+  display: flex;
+  flex-direction: column;
+  padding: 2em;
+  text-align: left;
+}
 
- .your-tasks ul li {
-   font-weight: bold;
- }
+.your-tasks ul li {
+  font-weight: bold;
+}
 
- p {
-   padding-left: 1em;
- }
+p {
+  padding-left: 1em;
+}
 
- .task-list {
-   text-align: center;
-   padding-right: 1em;
+.task-list {
+  text-align: center;
+  padding-right: 1em;
 
- }
+}
 
- .task-list li a{
-   border-radius: 15px;
-   border: thin solid;
-   padding: 1em;
-   margin: 10px;
- }
+.task-list li a{
+  border-radius: 15px;
+  border: thin solid;
+  padding: 1em;
+}
 
- .task-list li{
-   margin: 20%;
- }
+.task-list li{
+  margin: 20%;
+}
 
 .task-list  a:hover{
-   color: white;
-   background-color: black;
- }
+  color: white;
+  background-color: black;
+}
 
 a:visited {
   color: black;
 }
 
 /* .task-list li a:hover{
-   color: white;
-   background-color: black;
- } */
+color: white;
+background-color: black;
+} */
 
 
- ul {
-   list-style: none;
-   padding: 0;
- }
+ul {
+  list-style: none;
+  padding: 0;
+}
 
- h2 {
-   text-align: center;
- }
+h2 {
+  text-align: center;
+}
 
- a {
-   text-decoration: none;
- }
+a {
+  text-decoration: none;
+}
+
+@media screen and (max-width: 660px) {
+  .task-list li a {
+    font-size: small;
+    padding: .5em;
+  }
+}
+
+@media screen and (max-width: 496px) {
+  .task-list li a {
+    font-size: small;
+    padding: 3px;
+    border: thin solid;
+  }
+}

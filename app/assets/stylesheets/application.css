@@ -101,3 +101,27 @@ a {
     border: thin solid;
   }
 }
+
+.task-form {
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+}
+
+.task-form label{
+  padding-bottom: 1em;
+  padding-top: 1em;
+}
+
+.task-form input{
+  margin-bottom: 1em;
+  font-size: medium;
+}
+
+.task-form p {
+  font-weight: bold;
+}
+
+.complete {
+  text-decoration: line-through;
+}

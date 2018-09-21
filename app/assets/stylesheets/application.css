@@ -27,17 +27,11 @@
   border: thin solid;
 }
 
-.your-tasks a:hover {
-  border: thin solid;
-  border-radius: 5px;
-  color: white;
-  background-color: black;
-}
-
 .your-tasks ul {
   display: flex;
   flex-direction: column;
   padding: 2em;
+  align-items: center;
   text-align: left;
 }
 
@@ -65,13 +59,11 @@ p {
   margin: 20%;
 }
 
-.task-list  a:hover{
+a:hover{
   color: white;
   background-color: black;
-}
-
-a:visited {
-  color: black;
+  border: thin solid;
+  border-radius: 5px;
 }
 
 ul {
@@ -85,6 +77,7 @@ h2 {
 
 a {
   text-decoration: none;
+  color: black;
 }
 
 @media screen and (max-width: 660px) {

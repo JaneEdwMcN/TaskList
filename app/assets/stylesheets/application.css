@@ -118,3 +118,11 @@ a {
 .complete {
   text-decoration: line-through;
 }
+
+footer {
+  text-align: center;
+  border-bottom: solid black;
+  border-left: solid black;
+  border-right: solid black;
+  border-top: thin solid black;
+}
